@@ -12,6 +12,8 @@
 
   time.timeZone = "Europe/London";
 
+  networking.networkmanager.enable = true;
+  networking.wireless.enable = false;
   networking.useDHCP = false;
   networking.interfaces.ens3.useDHCP = true;
 
