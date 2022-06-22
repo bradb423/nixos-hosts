@@ -21,6 +21,8 @@
         cp = "cp -i";
         rm = "rm -i";
         nnao = "nano";
+        naon = "nano";
+        vs = "codium . && exit";
       };
     };
   };

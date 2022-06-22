@@ -14,7 +14,6 @@ in
 
   home-manager.users.brad.home.stateVersion = "22.05";
 
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
