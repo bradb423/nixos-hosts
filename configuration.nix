@@ -57,6 +57,14 @@ in
     iagno # go game
     hitori # sudoku game
     atomix # puzzle game
+    gnome-weather
+    gnome-calculator
+    gnome-calendar
+    gnome-system-monitor
+    gnome-contacts
+    gnome-maps
+    gnome-clocks
+    baobab
   ]);
 
   # Configure keymap in X11
