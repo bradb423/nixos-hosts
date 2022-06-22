@@ -23,6 +23,7 @@
         nnao = "nano";
         naon = "nano";
         vs = "codium . && exit";
+        neofetch = "clear && neofetch";
       };
     };
   };
