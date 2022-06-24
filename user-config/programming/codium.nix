@@ -19,6 +19,7 @@
         bungcip.better-toml
         redhat.vscode-yaml
         matklad.rust-analyzer
+        ms-python.python
       ];
     };
   };
