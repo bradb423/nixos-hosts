@@ -1,4 +1,4 @@
-_:
+{config, ...}:
 
 {
   home-manager.users.brad = { pkgs, ... }: {
@@ -8,6 +8,9 @@ _:
       enableBashIntegration = true;
       settings = {
         add_newline = true;
+        nix_shell = {
+          symbol = "❄️ ";
+        };
       };
     };
   };
