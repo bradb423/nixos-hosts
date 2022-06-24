@@ -65,6 +65,7 @@ in
     gnome-maps
     gnome-clocks
     baobab
+    simple-scan
   ]);
 
   # Configure keymap in X11
@@ -99,7 +100,8 @@ in
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.brad = {
     isNormalUser = true;
-    description = "brad";
+    home = "/home/brad";
+    description = "Bradley Burns";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
