@@ -20,6 +20,7 @@
         redhat.vscode-yaml
         matklad.rust-analyzer
         ms-python.python
+        tabnine.tabnine-vscode
       ];
     };
   };
