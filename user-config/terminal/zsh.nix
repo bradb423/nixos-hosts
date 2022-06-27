@@ -24,6 +24,9 @@
         naon = "nano";
         vs = "codium . && exit";
         neofetch = "clear && neofetch";
+        nix-shell = "nix-shell --command zsh";
+        rebuild = "sudo nixos-rebuild switch";
+        reboot = "sudo reboot now";
       };
     };
   };
