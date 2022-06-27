@@ -8,9 +8,6 @@
       enableBashIntegration = true;
       settings = {
         add_newline = true;
-        nix_shell = {
-          symbol = "❄️ ";
-        };
       };
     };
   };
