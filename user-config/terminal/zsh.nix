@@ -1,4 +1,4 @@
-{ config, ...}:
+{ config, ... }:
 
 {
   home-manager.users.brad = { pkgs, ... }: {
@@ -10,7 +10,7 @@
       autocd = true;
       oh-my-zsh = {
         enable = true;
-        plugins = [ "history"];
+        plugins = [ "history" ];
       };
       shellAliases = {
         ls = "ls -aFh --color=auto";

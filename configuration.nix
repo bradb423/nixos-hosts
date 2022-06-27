@@ -6,7 +6,8 @@ in
 
 {
   imports =
-      [ (import "${home-manager}/nixos")
+    [
+      (import "${home-manager}/nixos")
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./user-config/default.nix
@@ -113,8 +114,8 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
     nano
     neofetch
     firefox

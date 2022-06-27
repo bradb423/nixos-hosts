@@ -1,4 +1,4 @@
-{config, ...}:
+{ config, ... }:
 
 {
   home-manager.users.brad = { pkgs, ... }: {
