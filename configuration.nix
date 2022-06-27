@@ -12,6 +12,7 @@ in
       ./user-config/default.nix
     ];
 
+  home-manager.users.brad.imports = [ ./user-config/display/dconf.nix ];
   home-manager.users.brad.home.stateVersion = "22.05";
 
   # Bootloader.
