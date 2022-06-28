@@ -27,6 +27,7 @@
         nix-shell = "nix-shell --command zsh";
         rebuild = "sudo nixos-rebuild switch";
         reboot = "sudo reboot now";
+        nixup = "sudo nix-channel --update";
       };
     };
   };
