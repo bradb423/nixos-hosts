@@ -4,7 +4,7 @@ let
   pythonPackages = python3Packages;
 in
 pkgs.mkShell rec {
-  name = "flashcard";
+  name = "python-shell";
   venvDir = "./.venv";
   buildInputs = [
     pythonPackages.python

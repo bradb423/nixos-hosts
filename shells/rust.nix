@@ -1,5 +1,6 @@
 { pkgs ? import <nixpkgs> { } }:
 pkgs.mkShell {
+  name = "rust-shell";
   nativeBuildInputs = with pkgs; [ rustc cargo gcc ];
   buildInputs = with pkgs; [ rustfmt clippy ];
 
