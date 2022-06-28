@@ -5,9 +5,26 @@ with lib.hm.gvariant;
 
 {
   dconf.settings = {
+    "apps/seahorse/listing" = {
+      keyrings-selected = [ "secret-service:///org/freedesktop/secrets/collection/login" ];
+    };
+
+    "apps/seahorse/windows/key-manager" = {
+      height = 476;
+      width = 600;
+    };
+
+    "org/gnome/Connections" = {
+      first-run = false;
+    };
+
     "org/gnome/control-center" = {
-      last-panel = "bluetooth";
+      last-panel = "notifications";
       window-state = mkTuple [ 980 640 ];
+    };
+
+    "org/gnome/desktop/a11y/keyboard" = {
+      mousekeys-enable = false;
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -15,7 +32,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" ];
+      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" "org.gnome.Totem.desktop" "yelp.desktop" "org.gnome.Extensions.desktop" "htop.desktop" "org.gnome.TextEditor.desktop" "org.gnome.Tour.desktop" "xterm.desktop" ];
       categories = [ "X-GNOME-Utilities" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
@@ -43,10 +60,19 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
+      locate-pointer = true;
     };
 
     "org/gnome/desktop/notifications" = {
       application-children = [ "org-gnome-console" "org-gnome-nautilus" ];
+    };
+
+    "org/gnome/desktop/notifications/application/firefox" = {
+      application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-power-panel" = {
+      application-id = "gnome-power-panel.desktop";
     };
 
     "org/gnome/desktop/notifications/application/org-gnome-console" = {
@@ -57,12 +83,32 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Nautilus.desktop";
     };
 
+    "org/gnome/desktop/peripherals/touchpad" = {
+      two-finger-scrolling-enabled = true;
+    };
+
+    "org/gnome/desktop/privacy" = {
+      old-files-age = mkUint32 30;
+      recent-files-max-age = -1;
+      remember-recent-files = false;
+      remove-old-temp-files = true;
+      remove-old-trash-files = true;
+    };
+
     "org/gnome/desktop/screensaver" = {
       color-shading-type = "solid";
       picture-options = "zoom";
       picture-uri = "file:///home/brad/Pictures/firewatch-dark-version.jpg";
       primary-color = "#000000000000";
       secondary-color = "#000000000000";
+    };
+
+    "org/gnome/desktop/search-providers" = {
+      sort-order = [ "org.gnome.Contacts.desktop" "org.gnome.Documents.desktop" "org.gnome.Nautilus.desktop" ];
+    };
+
+    "org/gnome/desktop/session" = {
+      idle-delay = mkUint32 900;
     };
 
     "org/gnome/epiphany/state" = {
@@ -104,8 +150,12 @@ with lib.hm.gvariant;
       name = "Terminal";
     };
 
+    "org/gnome/settings-daemon/plugins/power" = {
+      power-button-action = "suspend";
+    };
+
     "org/gnome/shell" = {
-      app-picker-layout = "[{'org.gnome.Totem.desktop': <{'position': <0>}>, 'org.gnome.Settings.desktop': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'yelp.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'htop.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'org.gnome.TextEditor.desktop': <{'position': <7>}>, 'org.gnome.Tour.desktop': <{'position': <8>}>, 'codium.desktop': <{'position': <9>}>, 'xterm.desktop': <{'position': <10>}>}]";
+      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'nixos-manual.desktop': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
       favorite-apps = [ "firefox.desktop" "org.gnome.Console.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
       welcome-dialog-last-shown-version = "42.2";
     };
@@ -137,6 +187,10 @@ with lib.hm.gvariant;
       type-format = "category";
       window-position = mkTuple [ 26 23 ];
       window-size = mkTuple [ 1203 902 ];
+    };
+
+    "system/proxy" = {
+      mode = "none";
     };
 
   };
