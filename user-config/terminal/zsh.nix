@@ -18,6 +18,7 @@ c = "clear";
         cp = "cp -i";
         ll = "ls -alFh --color=auto";
         ls = "ls -aFh --color=auto";
+        sl = "ls -aFh --color=auto";
         mkdir = "mkdir -pv";
         mv = "mv -i";
         naon = "nano";
