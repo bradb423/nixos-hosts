@@ -6,21 +6,21 @@
       enable = true;
       package = pkgs.vscodium;
       extensions = with pkgs.vscode-extensions; [
-        dracula-theme.theme-dracula
-        yzhang.markdown-all-in-one
-        timonwong.shellcheck
-        oderwat.indent-rainbow
-        foxundermoon.shell-format
-        eamodio.gitlens
         bbenoist.nix
-        shardulm94.trailing-spaces
-        davidanson.vscode-markdownlint
-        streetsidesoftware.code-spell-checker
         bungcip.better-toml
-        redhat.vscode-yaml
+        davidanson.vscode-markdownlint
+        dracula-theme.theme-dracula
+        eamodio.gitlens
+        foxundermoon.shell-format
         matklad.rust-analyzer
         ms-python.python
+        oderwat.indent-rainbow
+        redhat.vscode-yaml
+        shardulm94.trailing-spaces
+        streetsidesoftware.code-spell-checker
         tabnine.tabnine-vscode
+        timonwong.shellcheck
+        yzhang.markdown-all-in-one
       ];
     };
   };

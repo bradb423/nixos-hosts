@@ -49,25 +49,25 @@ in
     gnome-photos
     gnome-tour
   ]) ++ (with pkgs.gnome; [
+    atomix # puzzle game
+    baobab
     cheese # webcam tool
-    gnome-music
-    gedit # text editor
     epiphany # web browser
     geary # email reader
-    gnome-characters
-    tali # poker game
-    iagno # go game
-    hitori # sudoku game
-    atomix # puzzle game
-    gnome-weather
+    gedit # text editor
     gnome-calculator
     gnome-calendar
-    gnome-system-monitor
+    gnome-characters
+    gnome-clocks
     gnome-contacts
     gnome-maps
-    gnome-clocks
-    baobab
+    gnome-music
+    gnome-system-monitor
+    gnome-weather
+    hitori # sudoku game
+    iagno # go game
     simple-scan
+    tali # poker game
   ]);
 
   # Configure keymap in X11
@@ -116,10 +116,10 @@ in
   environment.systemPackages = with pkgs; [
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
-    nano
-    neofetch
     firefox
     htop
+    nano
+    neofetch
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
