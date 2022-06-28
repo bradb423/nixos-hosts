@@ -28,6 +28,8 @@
         rebuild = "sudo nixos-rebuild switch";
         reboot = "sudo reboot now";
         nixup = "sudo nix-channel --update";
+        clean = "nix-collect-garbage";
+        superclean = "sudo nix-collect-garbage -d";
       };
     };
   };
