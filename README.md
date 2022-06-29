@@ -14,13 +14,14 @@ should look like the above.
 
 ## Using the list ordering utility
 
-I like to keep my lists ordered alphabetically, and so the is a small program
+I like to keep my lists ordered alphabetically, and so there is a small program
 `list-orderer` which will take a list within a config file, and order it.
 
 Usage:
 
 - You can install cargo using the shell template `shells/rust.nix`
-- `cd list-orderer && cargo run filename list_start_line list_end_line`
+- `cd list-orderer`
+- Then run the command `cargo run {filename} {list_start_line} {list_end_line}`
 - An ordered version of the list will be outputted to the terminal, and can
   then be copied into the respective file
 - In future, I would like to improve this program to make it more automatic.
