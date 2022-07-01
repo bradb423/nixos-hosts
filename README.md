@@ -8,7 +8,7 @@ should look like the above.
 
 ## How to use
 
-- Clone this repository: `git clone git@github.com:bradb423/nixos-hosts.git && cd nixos-hosts`
+- Clone this repository: `git clone https://github.com/bradb423/nixos-hosts.git && cd nixos-hosts`
 - Make sure you enter the right disk and bootloader information in `configuration.nix` and `hardware-configuration.nix`.
 - Run the script: `./link.sh`
 - Then use the command `sudo nixos-rebuild switch` to take in the changes
