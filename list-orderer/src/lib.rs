@@ -10,6 +10,7 @@ pub struct Invocation {
 impl Invocation {
     pub fn new(args: &[String]) -> Result<Invocation, &'static str> {
         if args.len() < 3 {
+            help();
             return Err("Not enough arguments");
         }
 
