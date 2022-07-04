@@ -6,12 +6,14 @@
       enable = true;
       package = pkgs.vscodium;
       extensions = with pkgs.vscode-extensions; [
+        b4dm4n.vscode-nixpkgs-fmt
         bbenoist.nix
         bungcip.better-toml
         davidanson.vscode-markdownlint
         dracula-theme.theme-dracula
         eamodio.gitlens
         foxundermoon.shell-format
+        jnoortheen.nix-ide
         matklad.rust-analyzer
         ms-python.python
         oderwat.indent-rainbow
