@@ -8,6 +8,8 @@
     ./terminal/direnv.nix
 
     ./programming/codium.nix
+
+    ./display/gtk.nix
   ];
 
 }
