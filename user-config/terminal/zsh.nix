@@ -29,6 +29,7 @@ c = "clear";
         reboot = "sudo reboot now";
         rebuild = "sudo nixos-rebuild switch";
         rm = "rm -i";
+        shfmt = "shfmt -l -w";
         superclean = "sudo nix-collect-garbage -d";
         u = "cd ..";
         uu = "cd ../..";

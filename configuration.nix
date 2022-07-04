@@ -123,6 +123,7 @@ in
     nano
     neofetch
     ripgrep
+    shfmt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
