@@ -23,6 +23,7 @@ c = "clear";
         mv = "mv -i";
         naon = "nano";
         neofetch = "clear && neofetch";
+        nfmt = "nixpkgs-fmt";
         nix-shell = "nix-shell --command zsh";
         nixup = "sudo nix-channel --update";
         nnao = "nano";

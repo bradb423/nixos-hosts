@@ -122,6 +122,7 @@ in
     htop
     nano
     neofetch
+    nixpkgs-fmt
     ripgrep
     shfmt
   ];
