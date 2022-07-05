@@ -118,7 +118,7 @@ in
     #  wget
     bat
     fd
-    firefox
+    firefox-wayland
     htop
     nano
     neofetch
