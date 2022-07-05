@@ -13,7 +13,7 @@
         plugins = [ "history" ];
       };
       shellAliases = {
-c = "clear";
+        c = "clear";
         clean = "nix-collect-garbage";
         cp = "cp -i";
         ll = "ls -alFh --color=auto";
