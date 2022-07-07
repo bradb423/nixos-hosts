@@ -18,8 +18,12 @@ with lib.hm.gvariant;
       first-run = false;
     };
 
+    "org/gnome/Console" = {
+      theme = "night";
+    };
+
     "org/gnome/control-center" = {
-      last-panel = "display";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -67,6 +71,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications" = {
       application-children = [ "org-gnome-console" "org-gnome-nautilus" ];
+    };
+
+    "org/gnome/desktop/notifications/application/codium" = {
+      application-id = "codium.desktop";
     };
 
     "org/gnome/desktop/notifications/application/firefox" = {
@@ -117,6 +125,11 @@ with lib.hm.gvariant;
       idle-delay = mkUint32 900;
     };
 
+    "org/gnome/eog/view" = {
+      background-color = "rgb(0,0,0)";
+      use-background-color = true;
+    };
+
     "org/gnome/epiphany/state" = {
       is-maximized = false;
       window-position = mkTuple [ (-1) (-1) ];
@@ -147,7 +160,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" ];
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -156,13 +169,19 @@ with lib.hm.gvariant;
       name = "Terminal";
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      binding = "<Super>f";
+      command = "firefox";
+      name = "Firefox";
+    };
+
     "org/gnome/settings-daemon/plugins/power" = {
       power-button-action = "suspend";
     };
 
     "org/gnome/shell" = {
       app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'nixos-manual.desktop': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
-      disabled-extensions = [ "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" ];
+      disabled-extensions = [ "places-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" ];
       favorite-apps = [ "firefox.desktop" "org.gnome.Console.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
       welcome-dialog-last-shown-version = "42.2";
