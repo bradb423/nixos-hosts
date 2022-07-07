@@ -12,6 +12,7 @@
     nixpkgs-fmt
     ripgrep
     shfmt
+    unzip
     wget
 
     # Rust and C packages
