@@ -23,6 +23,20 @@
         timonwong.shellcheck
         yzhang.markdown-all-in-one
       ];
+      userSettings = {
+        "tabnine.experimentalAutoImports" = true;
+        "workbench.colorTheme" = "Dracula";
+        "files.autoSave" = "afterDelay";
+        "python.languageserver" = "Jedi";
+        "shellcheck.executablePath" = "/run/current-system/sw/bin/shfmt";
+        "[markdown]" = {
+          "editor.defaultFormatter" = "yzhang.markdown-all-in-one";
+        };
+        "[nix]" = {
+          "editor.defaultFormatter" = "B4dM4n.nixpkgs-fmt";
+        };
+        "editor.rulers" = [80];
+      };
     };
   };
 }
