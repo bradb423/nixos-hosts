@@ -12,6 +12,7 @@
     nixpkgs-fmt
     ripgrep
     shfmt
+    tealdeer
     unzip
     wget
 
