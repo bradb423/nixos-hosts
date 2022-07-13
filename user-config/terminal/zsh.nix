@@ -16,9 +16,9 @@
         c = "clear";
         clean = "nix-collect-garbage";
         cp = "cp -i";
-        ll = "ls -alFh --color=auto";
-        ls = "ls -aFh --color=auto";
-        sl = "ls -aFh --color=auto";
+        ll = "lsd -alFh --color=auto";
+        ls = "lsd -aFh --color=auto";
+        sl = "lsd -aFh --color=auto";
         mkdir = "mkdir -pv";
         mv = "mv -i";
         naon = "nano";
