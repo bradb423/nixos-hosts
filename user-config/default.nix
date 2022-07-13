@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./terminal/alacritty.nix
     ./terminal/git.nix
     ./terminal/zsh.nix
     ./terminal/starship.nix
