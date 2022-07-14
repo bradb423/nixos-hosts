@@ -13,6 +13,7 @@
         plugins = [ "history" ];
       };
       shellAliases = {
+        bat = "bat -p";
         c = "clear";
         clean = "nix-collect-garbage";
         cp = "cp -i";
