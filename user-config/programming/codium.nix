@@ -28,6 +28,7 @@
         "workbench.colorTheme" = "Dracula";
         "files.autoSave" = "afterDelay";
         "python.languageserver" = "Jedi";
+        "update.mode" = "none";
         "shellcheck.executablePath" = "/run/current-system/sw/bin/shfmt";
         "[markdown]" = {
           "editor.defaultFormatter" = "yzhang.markdown-all-in-one";
