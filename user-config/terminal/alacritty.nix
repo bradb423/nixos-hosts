@@ -7,7 +7,7 @@
             settings = {
                 font = {
                     family = "Fira Code";
-                    size = 11;
+                    size = 10;
                 };
             };
         };
