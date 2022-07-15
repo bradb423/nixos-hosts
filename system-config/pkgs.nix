@@ -5,7 +5,7 @@
     # Core packages that I want on all systems using this configuration
     bat
     fd
-    firefox-wayland
+    firefox
     htop
     nano
     neofetch
