@@ -165,7 +165,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>Return";
-      command = "kgx";
+      command = "alacritty";
       name = "Terminal";
     };
 
@@ -180,15 +180,15 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'nixos-manual.desktop': <{'position': <1>}>, 'Utilities': <{'position': <2>}>}]";
+      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'nixos-manual.desktop': <{'position': <2>}>}]";
       disabled-extensions = [ "places-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" ];
-      favorite-apps = [ "firefox.desktop" "org.gnome.Console.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
+      favorite-apps = [ "firefox.desktop" "Alacritty.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
       welcome-dialog-last-shown-version = "42.2";
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "firefox.desktop:1" "codium.desktop:2" "org.gnome.Console.desktop:1" ];
+      application-list = [ "firefox.desktop:1" "codium.desktop:2" "Alacritty.desktop:1" ];
     };
 
     "org/gnome/shell/extensions/user-theme" = {
