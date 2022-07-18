@@ -1,9 +1,9 @@
 { lib, config, ... }:
 
 {
-    home-manager.users.brad = {pkgs, ... }: {
-        programs.lsd = {
-            enable = true;
-        };
+  home-manager.users.brad = { pkgs, ... }: {
+    programs.lsd = {
+      enable = true;
     };
+  };
 }
