@@ -2,17 +2,17 @@
 
 {
   imports = [
-    ./terminal/alacritty.nix
-    ./terminal/bat.nix
-    ./terminal/lsd.nix
-    ./terminal/git.nix
-    ./terminal/zsh.nix
-    ./terminal/starship.nix
-    ./terminal/direnv.nix
+    ./display/gtk.nix
 
     ./programming/codium.nix
 
-    ./display/gtk.nix
+    ./terminal/alacritty.nix
+    ./terminal/bat.nix
+    ./terminal/direnv.nix
+    ./terminal/git.nix
+    ./terminal/lsd.nix
+    ./terminal/starship.nix
+    ./terminal/zsh.nix
   ];
 
 }
