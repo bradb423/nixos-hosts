@@ -28,6 +28,7 @@
         nix-shell = "nix-shell --command zsh";
         nixup = "sudo nix-channel --update";
         nnao = "nano";
+        onefetch = "clear && onefetch";
         reboot = "sudo reboot now";
         rebuild = "sudo nixos-rebuild switch";
         rm = "rm -i";
