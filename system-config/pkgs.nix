@@ -9,6 +9,7 @@
     nano
     neofetch
     nixpkgs-fmt
+    onefetch
     ripgrep
     shfmt
     tealdeer
