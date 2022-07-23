@@ -2,14 +2,16 @@
 
 ![Desired Outcome](images/desired-outcome.png)
 
-I recently moved from Arch to NixOS, after trying to find a way to incorporate
-easily declare a configuration for my laptop. If all goes well, the end result
+I recently moved from Arch to NixOS, after trying to find a way to easily
+declare a configuration for my laptop. If all goes well, the end result
 should look like the above.
 
 ## How to use
 
-- Clone this repository: `git clone https://github.com/bradb423/nixos-hosts.git && cd nixos-hosts`
-- Make sure you enter the right disk and bootloader information in `system-config/core/bootloader.nix` and `hardware-configuration.nix`.
+- Clone this repository:
+  `git clone https://github.com/bradb423/nixos-hosts.git && cd nixos-hosts`
+- Make sure you enter the right disk and bootloader information in
+  `system-config/core/bootloader.nix` and `hardware-configuration.nix`.
 - Run the script: `./link.sh`
 - Then use the command `sudo nixos-rebuild switch` to take in the changes
 
