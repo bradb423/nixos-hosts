@@ -25,6 +25,7 @@
       ];
       userSettings = {
         "tabnine.experimentalAutoImports" = true;
+        "editor.fontFamily" = "'FiraCode Nerd Font'";
         "workbench.colorTheme" = "Dracula";
         "files.autoSave" = "afterDelay";
         "python.languageserver" = "Jedi";
