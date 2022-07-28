@@ -30,6 +30,7 @@
         "files.autoSave" = "afterDelay";
         "python.languageserver" = "Jedi";
         "update.mode" = "none";
+        "redhat.telemetry.enabled" = "false";
         "shellcheck.executablePath" = "/run/current-system/sw/bin/shfmt";
         "[markdown]" = {
           "editor.defaultFormatter" = "yzhang.markdown-all-in-one";
