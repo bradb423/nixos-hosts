@@ -3,7 +3,7 @@
 {
   home-manager.users.brad.home.packages = [
     pkgs.fd
-    pkgsfirefox
+    pkgs.firefox
     pkgs.htop
     pkgs.libreoffice
     pkgs.neofetch
