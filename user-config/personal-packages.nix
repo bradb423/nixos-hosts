@@ -2,15 +2,15 @@
 
 {
   home-manager.users.brad.home.packages = [
-    pkgs.kitty
-    fd
-    firefox
-    htop
-    neofetch
-    nixpkgs-fmt
-    onefetch
-    ripgrep
-    shfmt
-    tealdeer
+    pkgs.fd
+    pkgsfirefox
+    pkgs.htop
+    pkgs.libreoffice
+    pkgs.neofetch
+    pkgs.nixpkgs-fmt
+    pkgs.onefetch
+    pkgs.ripgrep
+    pkgs.shfmt
+    pkgs.tealdeer
   ];
 }
