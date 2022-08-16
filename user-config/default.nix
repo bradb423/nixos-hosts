@@ -4,6 +4,8 @@
   imports = [
     ./display/gtk.nix
 
+    ./personal-packages.nix
+
     ./programming/codium.nix
 
     ./terminal/alacritty.nix
