@@ -32,11 +32,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders" = {
-      folder-children = [ "Utilities" "YaST" ];
+      folder-children = [ "Utilities" "YaST" "c39fc777-84a5-46fb-b25f-d6c16c2b40b0" ];
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" "org.gnome.Totem.desktop" "yelp.desktop" "org.gnome.Extensions.desktop" "htop.desktop" "org.gnome.TextEditor.desktop" "org.gnome.Tour.desktop" "xterm.desktop" ];
+      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" "org.gnome.Totem.desktop" "yelp.desktop" "org.gnome.Extensions.desktop" "htop.desktop" "org.gnome.TextEditor.desktop" "org.gnome.Tour.desktop" "xterm.desktop" "nvim.desktop" ];
       categories = [ "X-GNOME-Utilities" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
@@ -46,6 +46,12 @@ with lib.hm.gvariant;
       categories = [ "X-SuSE-YaST" ];
       name = "suse-yast.directory";
       translate = true;
+    };
+
+    "org/gnome/desktop/app-folders/folders/c39fc777-84a5-46fb-b25f-d6c16c2b40b0" = {
+      apps = [ "base.desktop" "startcenter.desktop" "calc.desktop" "impress.desktop" "draw.desktop" "math.desktop" "writer.desktop" ];
+      name = "Libre-Office";
+      translate = false;
     };
 
     "org/gnome/desktop/background" = {
@@ -93,6 +99,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Nautilus.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/writer" = {
+      application-id = "writer.desktop";
+    };
+
     "org/gnome/desktop/peripherals/keyboard" = {
       numlock-state = false;
     };
@@ -134,6 +144,10 @@ with lib.hm.gvariant;
       is-maximized = false;
       window-position = mkTuple [ (-1) (-1) ];
       window-size = mkTuple [ 1024 768 ];
+    };
+
+    "org/gnome/evince/default" = {
+      window-ratio = mkTuple [ 1.0065359477124183 0.7121212121212122 ];
     };
 
     "org/gnome/evolution-data-server" = {
@@ -180,15 +194,17 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'nixos-manual.desktop': <{'position': <2>}>}]";
-      disabled-extensions = [ "places-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "native-window-placement@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" ];
+      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'c39fc777-84a5-46fb-b25f-d6c16c2b40b0': <{'position': <2>}>, 'nixos-manual.desktop': <{'position': <3>}>}]";
+      disable-user-extensions = false;
+      disabled-extensions = [ "native-window-placement@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" ];
+      enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
       favorite-apps = [ "firefox.desktop" "Alacritty.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
+      had-bluetooth-devices-setup = true;
       welcome-dialog-last-shown-version = "42.2";
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "firefox.desktop:1" "codium.desktop:2" "Alacritty.desktop:1" ];
+      application-list = [];
     };
 
     "org/gnome/shell/extensions/user-theme" = {
