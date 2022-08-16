@@ -204,7 +204,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [];
+      application-list = [ ];
     };
 
     "org/gnome/shell/extensions/user-theme" = {
