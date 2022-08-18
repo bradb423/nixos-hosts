@@ -38,7 +38,7 @@
         "[nix]" = {
           "editor.defaultFormatter" = "B4dM4n.nixpkgs-fmt";
         };
-        "editor.rulers" = [80];
+        "editor.rulers" = [ 80 ];
       };
     };
   };
