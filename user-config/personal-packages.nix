@@ -10,6 +10,7 @@
     pkgs.nixpkgs-fmt
     pkgs.onefetch
     pkgs.ripgrep
+    pkgs.shellcheck
     pkgs.shfmt
     pkgs.tealdeer
   ];

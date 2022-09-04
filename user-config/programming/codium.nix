@@ -31,7 +31,7 @@
         "python.languageserver" = "Jedi";
         "update.mode" = "none";
         "redhat.telemetry.enabled" = "false";
-        "shellcheck.executablePath" = "/run/current-system/sw/bin/shfmt";
+        "shellcheck.executablePath" = "/home/brad/.nix-profile/bin/shellcheck";
         "[markdown]" = {
           "editor.defaultFormatter" = "yzhang.markdown-all-in-one";
         };
