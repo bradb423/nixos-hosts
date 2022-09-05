@@ -13,7 +13,7 @@
     ./terminal/direnv.nix
     ./terminal/git.nix
     ./terminal/lsd.nix
-    ./terminal/neovim.nix
+    ./terminal/helix.nix
     ./terminal/starship.nix
     ./terminal/zsh.nix
   ];
