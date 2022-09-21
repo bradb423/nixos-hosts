@@ -11,7 +11,7 @@ with pkgs;
 mkShell {
   buildInputs = [
     unstable.go
-    unstable.gotools
+    unstable.go-tools
     unstable.gopls
     unstable.go-outline
     unstable.gocode
@@ -19,5 +19,6 @@ mkShell {
     unstable.gocode-gomod
     unstable.godef
     unstable.golint
+    unstable.delve
   ];
 }
