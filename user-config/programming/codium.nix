@@ -12,6 +12,7 @@
         dracula-theme.theme-dracula
         eamodio.gitlens
         foxundermoon.shell-format
+        golang.go
         jnoortheen.nix-ide
         matklad.rust-analyzer
         ms-python.python
