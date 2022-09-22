@@ -20,12 +20,10 @@
         redhat.vscode-yaml
         shardulm94.trailing-spaces
         streetsidesoftware.code-spell-checker
-        tabnine.tabnine-vscode
         timonwong.shellcheck
         yzhang.markdown-all-in-one
       ];
       userSettings = {
-        "tabnine.experimentalAutoImports" = true;
         "editor.fontFamily" = "'FiraCode Nerd Font'";
         "workbench.colorTheme" = "Dracula";
         "files.autoSave" = "afterDelay";
