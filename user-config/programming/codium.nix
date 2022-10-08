@@ -13,7 +13,9 @@
         eamodio.gitlens
         foxundermoon.shell-format
         golang.go
+        haskell.haskell
         jnoortheen.nix-ide
+        justusadam.language-haskell
         matklad.rust-analyzer
         ms-python.python
         oderwat.indent-rainbow
