@@ -9,7 +9,6 @@ pkgs.mkShell rec {
   buildInputs = [
     pythonPackages.python
     pythonPackages.venvShellHook
-    ripgrep
   ];
 
   postShellHook = ''
