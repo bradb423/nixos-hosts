@@ -20,6 +20,7 @@
         ll = "lsd -alFh";
         ls = "lsd -aFh";
         sl = "lsd -aFh";
+        lt = "lsd -aFh --tree";
         mkdir = "mkdir -pv";
         mv = "mv -i";
         naon = "nano";
