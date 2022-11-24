@@ -2,6 +2,7 @@
 
 {
   home-manager.users.brad.home.packages = [
+    pkgs.calibre
     pkgs.fd
     pkgs.firefox
     pkgs.htop
