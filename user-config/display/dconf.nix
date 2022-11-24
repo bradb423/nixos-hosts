@@ -32,7 +32,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders" = {
-      folder-children = [ "Utilities" "YaST" "c39fc777-84a5-46fb-b25f-d6c16c2b40b0" ];
+      folder-children = [ "Utilities" "YaST" "c39fc777-84a5-46fb-b25f-d6c16c2b40b0" "04f875ab-5d3a-4045-8fda-bfb2afaf2e55" ];
+    };
+
+    "org/gnome/desktop/app-folders/folders/04f875ab-5d3a-4045-8fda-bfb2afaf2e55" = {
+      apps = [ "calibre-gui.desktop" "calibre-ebook-edit.desktop" "calibre-ebook-viewer.desktop" "calibre-lrfviewer.desktop" ];
+      name = "Calibre";
+      translate = false;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
@@ -77,6 +83,11 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications" = {
       application-children = [ "org-gnome-console" "org-gnome-nautilus" ];
+      show-banners = true;
+    };
+
+    "org/gnome/desktop/notifications/application/alacritty" = {
+      application-id = "Alacritty.desktop";
     };
 
     "org/gnome/desktop/notifications/application/codium" = {
@@ -85,6 +96,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/firefox" = {
       application-id = "firefox.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/gnome-network-panel" = {
+      application-id = "gnome-network-panel.desktop";
     };
 
     "org/gnome/desktop/notifications/application/gnome-power-panel" = {
@@ -105,6 +120,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/peripherals/keyboard" = {
       numlock-state = false;
+    };
+
+    "org/gnome/desktop/peripherals/mouse" = {
+      left-handed = false;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
@@ -135,6 +154,10 @@ with lib.hm.gvariant;
       idle-delay = mkUint32 900;
     };
 
+    "org/gnome/eog/ui" = {
+      sidebar = false;
+    };
+
     "org/gnome/eog/view" = {
       background-color = "rgb(0,0,0)";
       use-background-color = true;
@@ -146,13 +169,31 @@ with lib.hm.gvariant;
       window-size = mkTuple [ 1024 768 ];
     };
 
+    "org/gnome/evince" = {
+      document-directory = "@ms 'file:///home/brad/Downloads'";
+    };
+
     "org/gnome/evince/default" = {
-      window-ratio = mkTuple [ 1.0065359477124183 0.7121212121212122 ];
+      window-ratio = mkTuple [ 1.006536 0.712121 ];
     };
 
     "org/gnome/evolution-data-server" = {
       migrated = true;
       network-monitor-gio-name = "";
+    };
+
+    "org/gnome/file-roller/listing" = {
+      list-mode = "as-folder";
+      name-column-width = 250;
+      show-path = false;
+      sort-method = "name";
+      sort-type = "ascending";
+    };
+
+    "org/gnome/file-roller/ui" = {
+      sidebar-width = 200;
+      window-height = 480;
+      window-width = 600;
     };
 
     "org/gnome/mutter" = {
@@ -161,6 +202,10 @@ with lib.hm.gvariant;
       edge-tiling = true;
       focus-change-on-pointer-rest = true;
       workspaces-only-on-primary = true;
+    };
+
+    "org/gnome/nautilus/compression" = {
+      default-compression-format = "zip";
     };
 
     "org/gnome/nautilus/preferences" = {
@@ -194,7 +239,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'c39fc777-84a5-46fb-b25f-d6c16c2b40b0': <{'position': <2>}>, 'nixos-manual.desktop': <{'position': <3>}>}]";
+      app-picker-layout = "[{'04f875ab-5d3a-4045-8fda-bfb2afaf2e55': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'c39fc777-84a5-46fb-b25f-d6c16c2b40b0': <{'position': <2>}>, 'org.gnome.Settings.desktop': <{'position': <3>}>, 'nixos-manual.desktop': <{'position': <4>}>}]";
       disable-user-extensions = false;
       disabled-extensions = [ "native-window-placement@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" ];
       enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
@@ -204,7 +249,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ ];
+      application-list = [];
     };
 
     "org/gnome/shell/extensions/user-theme" = {
