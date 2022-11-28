@@ -23,6 +23,7 @@
         shardulm94.trailing-spaces
         streetsidesoftware.code-spell-checker
         timonwong.shellcheck
+        xaver.clang-format
         yzhang.markdown-all-in-one
       ];
       userSettings = {
