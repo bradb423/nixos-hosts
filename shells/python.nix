@@ -1,24 +1,20 @@
-with import <nixpkgs> { };
+{ pkgs ? import <nixpkgs> { } }:
 
 let
-  pythonPackages = python3Packages;
-in
-pkgs.mkShell rec {
-  name = "python-shell";
-  venvDir = "./.venv";
-  buildInputs = [
-    pythonPackages.python
-    pythonPackages.venvShellHook
+  my-python-packages = p: with p; [
+    black
+    coverage
+    pylint
+    requests
+    (opencv4.override { enableGtk2 = true; })
   ];
+  my-python = pkgs.python3.withPackages my-python-packages;
+in
 
-  postShellHook = ''
-    if [[ -f "requirements.txt" ]]; then
-        pip install -r requirements.txt
-    fi
-
-    if [[ -f "dev-requirements.txt" ]]; then
-        pip install -r dev-requirements.txt
-    fi
-  '';
-
+pkgs.mkShell {
+  name = "python-env";
+  packages = [
+    my-python
+  ];
 }
+
