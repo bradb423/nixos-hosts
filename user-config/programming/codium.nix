@@ -9,7 +9,6 @@
         b4dm4n.vscode-nixpkgs-fmt
         bungcip.better-toml
         davidanson.vscode-markdownlint
-        dracula-theme.theme-dracula
         eamodio.gitlens
         foxundermoon.shell-format
         golang.go
@@ -28,11 +27,10 @@
       ];
       userSettings = {
         "editor.fontFamily" = "'FiraCode Nerd Font'";
-        "workbench.colorTheme" = "Dracula";
+        "editor.fontSize" = 16;
         "files.autoSave" = "afterDelay";
-        "python.languageserver" = "Jedi";
         "update.mode" = "none";
-        "redhat.telemetry.enabled" = "false";
+        "redhat.telemetry.enabled" = false;
         "shellcheck.executablePath" = "/home/brad/.nix-profile/bin/shellcheck";
         "shellformat.path" = "/home/brad/.nix-profile/bin/shfmt";
         "[markdown]" = {
@@ -42,9 +40,7 @@
           "editor.defaultFormatter" = "B4dM4n.nixpkgs-fmt";
         };
         "editor.rulers" = [ 80 ];
-        "[go]" = {
-          "toolsManagement.checkForUpdates" = "off";
-        };
+        "go.toolsManagement.checkForUpdates" = "proxy";
       };
     };
   };

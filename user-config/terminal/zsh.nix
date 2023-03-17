@@ -16,6 +16,7 @@
         bat = "bat -p";
         c = "clear";
         clean = "nix-collect-garbage";
+        code = "codium";
         cp = "cp -i";
         ll = "lsd -alFh";
         ls = "lsd -aFh";
