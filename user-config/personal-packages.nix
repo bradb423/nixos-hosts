@@ -14,5 +14,6 @@
     pkgs.shellcheck
     pkgs.shfmt
     pkgs.tealdeer
+    pkgs.tree
   ];
 }
