@@ -82,16 +82,25 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-gnome-console" "org-gnome-nautilus" ];
+      application-children = [ "org-gnome-console" "org-gnome-nautilus" "gnome-power-panel" ];
       show-banners = true;
+      show-in-lock-screen = false;
     };
 
     "org/gnome/desktop/notifications/application/alacritty" = {
       application-id = "Alacritty.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/calibre-gui" = {
+      application-id = "calibre-gui.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/codium" = {
       application-id = "codium.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/draw" = {
+      application-id = "draw.desktop";
     };
 
     "org/gnome/desktop/notifications/application/firefox" = {
@@ -154,6 +163,11 @@ with lib.hm.gvariant;
       idle-delay = mkUint32 900;
     };
 
+    "org/gnome/desktop/sound" = {
+      event-sounds = true;
+      theme-name = "__custom";
+    };
+
     "org/gnome/eog/ui" = {
       sidebar = false;
     };
@@ -210,12 +224,18 @@ with lib.hm.gvariant;
 
     "org/gnome/nautilus/preferences" = {
       default-folder-viewer = "icon-view";
+      migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
+      search-view = "list-view";
     };
 
     "org/gnome/nautilus/window-state" = {
       initial-size = mkTuple [ 890 550 ];
       maximized = false;
+    };
+
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = false;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
@@ -241,10 +261,11 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       app-picker-layout = "[{'04f875ab-5d3a-4045-8fda-bfb2afaf2e55': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'c39fc777-84a5-46fb-b25f-d6c16c2b40b0': <{'position': <2>}>, 'org.gnome.Settings.desktop': <{'position': <3>}>, 'nixos-manual.desktop': <{'position': <4>}>}]";
       disable-user-extensions = false;
-      disabled-extensions = [ "native-window-placement@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" ];
-      enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
+      disabled-extensions = [ "native-window-placement@gnome-shell-extensions.gcampax.github.com" "screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "places-menu@gnome-shell-extensions.gcampax.github.com" "drive-menu@gnome-shell-extensions.gcampax.github.com" "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "apps-menu@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
+      enabled-extensions = [ "launch-new-instance@gnome-shell-extensions.gcampax.github.com" ];
       favorite-apps = [ "firefox.desktop" "Alacritty.desktop" "codium.desktop" "org.gnome.Nautilus.desktop" ];
       had-bluetooth-devices-setup = true;
+      last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "42.2";
     };
 
@@ -253,7 +274,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/user-theme" = {
-      name = "Dracula";
+      name = "";
     };
 
     "org/gtk/gtk4/settings/file-chooser" = {
