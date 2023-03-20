@@ -6,6 +6,7 @@
       enable = true;
       enableZshIntegration = true;
       enableBashIntegration = true;
+      enableNushellIntegration = true;
       settings = {
         add_newline = true;
         aws.style = "bold #ffb86c";

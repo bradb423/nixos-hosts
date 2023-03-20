@@ -9,6 +9,7 @@
     pkgs.libreoffice
     pkgs.neofetch
     pkgs.nixpkgs-fmt
+    pkgs.nushell
     pkgs.onefetch
     pkgs.ripgrep
     pkgs.shellcheck
