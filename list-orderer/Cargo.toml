@@ -1,8 +1,15 @@
 [package]
 name = "list-orderer"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+authors = ["Bradley Burns <bradleyburns00@gmail.com>"]
+description = """
+The list ordering utility provides the ability to aplhabetically order items in
+lists. This is useful for ordering the lists of packages in this repository,
+such as in `user-config/personal-packages.nix`
+"""
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+clap = { version = "4.1.11", features = ["derive"] }

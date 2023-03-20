@@ -1,21 +1,30 @@
-use std::env;
 use std::error::Error;
 use std::fs;
 
-mod lib;
+use clap::Parser;
+
+/// Simple program to order lists alphabetically. This is useful for the lists
+/// of packages that I have in various files.
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    /// The name of the file to look into.
+    filename: String,
+    /// The starting line to start ordering from.
+    start_line: usize,
+    /// The ending line to stop ordering at.
+    end_line: usize,
+}
 
 fn main() -> Result<(), Box<dyn Error>> {
-    let args: Vec<String> = env::args().collect();
+    let args = Args::parse();
 
-    // Create an `Invocation` struct to represent the information in the arguments
-    let invocation = lib::Invocation::new(&args)?;
-
-    let contents = fs::read_to_string(invocation.filename)?;
+    let contents = fs::read_to_string(args.filename)?;
 
     let mut list: Vec<&str> = Vec::new();
 
     for (index, line) in contents.lines().enumerate() {
-        if index + 1 >= invocation.start && index + 1 <= invocation.end {
+        if index + 1 >= args.start_line && index + 1 <= args.end_line {
             list.push(line);
         }
     }
