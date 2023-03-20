@@ -29,6 +29,7 @@
         "editor.fontFamily" = "'FiraCode Nerd Font'";
         "editor.fontSize" = 16;
         "files.autoSave" = "afterDelay";
+        "workbench.editor.enablePreview" = false;
         "update.mode" = "none";
         "redhat.telemetry.enabled" = false;
         "shellcheck.executablePath" = "/home/brad/.nix-profile/bin/shellcheck";
