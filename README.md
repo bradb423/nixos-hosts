@@ -22,9 +22,23 @@ I like to keep my lists ordered alphabetically, and so there is a small program
 
 Usage:
 
-- You can install cargo using the shell template `shells/rust.nix`
+- You can install cargo using the shell template `nix-shell shells/rust.nix`
 - `cd list-orderer`
-- Then run the command `cargo run {filename} {list_start_line} {list_end_line}`
-- An ordered version of the list will be outputted to the terminal, and can
-  then be copied into the respective file
-- In future, I would like to improve this program to make it more automatic.
+
+```console
+The list ordering utility provides the ability to aplhabetically order items in
+lists. This is useful for ordering the lists of packages in this repository,
+such as in `user-config/personal-packages.nix`
+
+
+Usage: list-orderer <FILENAME> <START_LINE> <END_LINE>
+
+Arguments:
+  <FILENAME>    The name of the file to look into
+  <START_LINE>  The starting line to start ordering from
+  <END_LINE>    The ending line to stop ordering at
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
+```
