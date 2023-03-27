@@ -25,6 +25,8 @@
         xaver.clang-format
         yzhang.markdown-all-in-one
       ];
+      enableUpdateCheck = false;
+      enableExtensionUpdateCheck = false;
       userSettings = {
         "editor.fontFamily" = "'FiraCode Nerd Font'";
         "editor.fontSize" = 16;
