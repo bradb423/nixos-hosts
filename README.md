@@ -2,9 +2,8 @@
 
 ![Desired Outcome](images/desired-outcome.png)
 
-I recently moved from Arch to NixOS, after trying to find a way to easily
-declare a configuration for my laptop. If all goes well, the end result
-should look like the above.
+My NixOS setup, with all of my dotfiles and user packages. If the installation
+goes right, the end result should look like the above.
 
 ## How to use
 
