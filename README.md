@@ -14,6 +14,11 @@ goes right, the end result should look like the above.
 - Run the script: `./link.sh`
 - Then use the command `sudo nixos-rebuild switch` to take in the changes
 
+## Templates
+
+The directories `flakes/` and `shells/` contain skeletons for Nix flakes and
+shells that I use within projects. Feel free to use them.
+
 ## Using the list ordering utility
 
 I like to keep my lists ordered alphabetically, and so there is a small program
