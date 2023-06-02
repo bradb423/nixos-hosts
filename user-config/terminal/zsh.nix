@@ -10,7 +10,7 @@
       autocd = true;
       oh-my-zsh = {
         enable = true;
-        plugins = [ "history" ];
+        plugins = [ "history" "git"];
       };
       shellAliases = {
         bat = "bat -p";
@@ -41,6 +41,13 @@
         uuu = "cd ../../..";
         vs = "codium . && exit";
       };
+      initExtra = ''
+        number_of_lines () {
+          pattern='.py$\|.rs$\|.sh$\|.hs$\|.js$\|.nix$'
+          result=$(git ls-files | grep "$pattern" | xargs wc -l | grep total)
+          echo $result
+        }
+      '';
     };
   };
 }
