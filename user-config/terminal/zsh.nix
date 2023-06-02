@@ -10,14 +10,13 @@
       autocd = true;
       oh-my-zsh = {
         enable = true;
-        plugins = [ "history" ];
+        plugins = [ "history" "git"];
       };
       shellAliases = {
         bat = "bat -p";
         c = "clear";
         clean = "nix-collect-garbage";
         code = "codium";
-        gs = "git status";
         cp = "cp -i";
         ll = "lsd -alFh";
         ls = "lsd -aFh";
@@ -43,45 +42,11 @@
         vs = "codium . && exit";
       };
       initExtra = ''
-# Useful git functions
-gnew () {
-  if [[ -z "$1" ]]; then
-  echo "You must supply the name of the new branch!"
-  echo "Usage: $0 branch_name"
-  return 1
-  fi
-
-  # Create the new branch and checkout
-  git checkout -b "$1"
-}
-
-# Short version of git checkout
-gc () {
-  if [[ -z "$1" ]]; then
-  echo "You must tell me the branch you're switching to!"
-  echo "Usage: $0 branch_name"
-  return 1
-  fi
-
-  # Switch to the branch
-  git checkout "$1"
-}
-
-gdel () {
-  if [[ -z "$1" ]]; then
-  echo "Tell me which branch to delete!"
-  echo "Usage: $0 branch_name"
-  return 1
-  fi
-
-  git branch -D "$1"
-}
-
-number_of_lines () {
-  pattern='.py$\|.rs$\|.sh$\|.hs$\|.js$\|.nix$'
-  result=$(git ls-files | grep "$pattern" | xargs wc -l | grep total)
-  echo $result
-}
+        number_of_lines () {
+          pattern='.py$\|.rs$\|.sh$\|.hs$\|.js$\|.nix$'
+          result=$(git ls-files | grep "$pattern" | xargs wc -l | grep total)
+          echo $result
+        }
       '';
     };
   };
