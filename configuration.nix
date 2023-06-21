@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-22.11.tar.gz";
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
 in
 
 {
@@ -15,7 +15,7 @@ in
     ];
 
   home-manager.users.brad.imports = [ ./user-config/display/dconf.nix ];
-  home-manager.users.brad.home.stateVersion = "22.11";
+  home-manager.users.brad.home.stateVersion = "23.05";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.brad = {
@@ -25,6 +25,9 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
+
+  # For the above shell setting, install zsh using nixpkgs
+  programs.zsh.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -38,6 +41,6 @@ in
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.11"; # Did you read the comment?
+  system.stateVersion = "23.05"; # Did you read the comment?
 
 }
