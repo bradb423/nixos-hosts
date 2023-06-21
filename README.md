@@ -46,3 +46,15 @@ Options:
   -h, --help     Print help
   -V, --version  Print version
 ```
+
+## dconf_dump.sh
+
+GNOME's settings are not in the form of a configuration file, and are instead
+more akin to a registry (similar to Windows). To ensure that the settings that
+I like are consistent between devices, I use the program `dconf2nix` which
+reads the settings from dconf and places them into a Nix file which later
+becomes part of my overall NixOS configuration.
+
+The script at `scripts/dconf_dump.sh` pulls the `dconf` settings, then pipes the
+result into `dconf2nix` and redirects the output into the configuration file
+`user-config/display/dconf.nix`
