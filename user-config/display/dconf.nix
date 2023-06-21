@@ -19,6 +19,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/Console" = {
+      last-window-size = mkTuple [ 652 481 ];
       theme = "night";
     };
 
@@ -82,7 +83,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "org-gnome-console" "org-gnome-nautilus" "gnome-power-panel" ];
+      application-children = [ "org-gnome-console" "org-gnome-nautilus" "gnome-power-panel" "firefox" ];
       show-banners = true;
       show-in-lock-screen = false;
     };
@@ -175,6 +176,10 @@ with lib.hm.gvariant;
     "org/gnome/eog/view" = {
       background-color = "rgb(0,0,0)";
       use-background-color = true;
+    };
+
+    "org/gnome/epiphany" = {
+      ask-for-default = false;
     };
 
     "org/gnome/epiphany/state" = {
@@ -288,6 +293,7 @@ with lib.hm.gvariant;
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
+      view-type = "list";
       window-size = mkTuple [ 888 327 ];
     };
 
