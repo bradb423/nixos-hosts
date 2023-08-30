@@ -43,7 +43,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" "org.gnome.Totem.desktop" "yelp.desktop" "org.gnome.Extensions.desktop" "htop.desktop" "org.gnome.TextEditor.desktop" "org.gnome.Tour.desktop" "xterm.desktop" "nvim.desktop" ];
+      apps = [ "gnome-abrt.desktop" "nm-connection-editor.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "org.gnome.Totem.desktop" "org.gnome.Extensions.desktop" "xterm.desktop"];
       categories = [ "X-GNOME-Utilities" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
