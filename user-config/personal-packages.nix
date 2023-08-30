@@ -5,7 +5,6 @@
     pkgs.calibre
     pkgs.fd
     pkgs.firefox
-    pkgs.htop
     pkgs.libreoffice
     pkgs.neofetch
     pkgs.nixpkgs-fmt
