@@ -22,13 +22,20 @@
     gnome-characters
     gnome-clocks
     gnome-contacts
+    gnome-font-viewer
+    gnome-logs
     gnome-maps
     gnome-music
     gnome-system-monitor
+    pkgs.gnome-text-editor
     gnome-weather
     hitori # sudoku game
     iagno # go game
+    pkgs.gnome-connections
+    seahorse # password manager
     simple-scan
     tali # poker game
+    vinagre
+    yelp
   ]);
 }
