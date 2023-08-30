@@ -12,6 +12,7 @@
     ./terminal/bat.nix
     ./terminal/direnv.nix
     ./terminal/git.nix
+    ./terminal/htop.nix
     ./terminal/lsd.nix
     ./terminal/helix.nix
     ./terminal/starship.nix
