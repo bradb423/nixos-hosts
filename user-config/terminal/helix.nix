@@ -5,7 +5,7 @@ _:
     programs.helix = {
       enable = true;
       settings = {
-        theme="base16_default_dark";
+        theme = "base16_default_dark";
       };
     };
     xdg.desktopEntries.Helix = {

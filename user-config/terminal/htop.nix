@@ -1,7 +1,7 @@
 _:
 
 {
-  home-manager.users.brad = { pkgs, ...}: {
+  home-manager.users.brad = { pkgs, ... }: {
     programs.htop = {
       enable = true;
     };
