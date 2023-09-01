@@ -1,7 +1,11 @@
-{ lib, ... }:
+{ config, pkgs, ... }:
 
 {
+  programs.home-manager.enable = true;
+  home.username = "brad";
+  home.homeDirectory = "/home/brad";
   imports = [
+    ./display/dconf.nix
     ./display/gtk.nix
 
     ./personal-packages.nix
@@ -18,5 +22,6 @@
     ./terminal/starship.nix
     ./terminal/zsh.nix
   ];
+  home.stateVersion = "23.05";
 
 }
