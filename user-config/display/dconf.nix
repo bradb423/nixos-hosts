@@ -43,7 +43,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "gnome-abrt.desktop" "nm-connection-editor.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "org.gnome.Totem.desktop" "org.gnome.Extensions.desktop" "xterm.desktop"];
+      apps = [ "gnome-abrt.desktop" "nm-connection-editor.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "org.gnome.Totem.desktop" "org.gnome.Extensions.desktop" "xterm.desktop" ];
       categories = [ "X-GNOME-Utilities" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
@@ -275,7 +275,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [];
+      application-list = [ ];
     };
 
     "org/gnome/shell/extensions/user-theme" = {

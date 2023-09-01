@@ -1,21 +1,12 @@
 { config, pkgs, ... }:
 
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
-in
-
 {
   imports =
     [
-      (import "${home-manager}/nixos")
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./user-config/default.nix
       ./system-config/default.nix
     ];
-
-  home-manager.users.brad.imports = [ ./user-config/display/dconf.nix ];
-  home-manager.users.brad.home.stateVersion = "23.05";
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.brad = {
