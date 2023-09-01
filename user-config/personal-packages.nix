@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home-manager.users.brad.home.packages = [
+  home.packages = [
     pkgs.calibre
     pkgs.fd
     pkgs.firefox
