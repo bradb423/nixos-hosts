@@ -27,11 +27,11 @@
       neofetch = "clear && neofetch";
       nfmt = "nixpkgs-fmt";
       nix-shell = "nix-shell --command zsh";
-      nixup = "sudo nix-channel --update";
+      nixup = "cd ~/nixos-hosts && nix flake update";
       nnao = "nano";
       onefetch = "clear && onefetch";
       reboot = "sudo reboot now";
-      rebuild = "sudo nixos-rebuild switch";
+      rebuild = "cd ~/nixos-hosts && sudo nixos-rebuild --flake .#nixos switch";
       rm = "rm -i";
       shfmt = "shfmt -l -w";
       superclean = "sudo nix-collect-garbage -d";
