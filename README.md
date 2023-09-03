@@ -12,12 +12,13 @@ goes right, the end result should look like the above.
 - Make sure you enter the right disk and bootloader information in
   `system-config/core/bootloader.nix` and `hardware-configuration.nix`.
 - Run the script: `./link.sh`
-- Then use the command `sudo nixos-rebuild switch` to take in the changes
+- Then use the command `sudo nixos-rebuild --flake .#nixos switch` to take in
+  the changes
 
 ## Templates
 
-The directories `flakes/` and `shells/` contain skeletons for Nix flakes and
-shells that I use within projects. Feel free to use them.
+The directories `flake-templates/` and `shell-templates/` contain skeletons for
+Nix flakes and shells that I use within projects. Feel free to use them.
 
 ## Using the list ordering utility
 
@@ -26,7 +27,7 @@ I like to keep my lists ordered alphabetically, and so there is a small program
 
 Usage:
 
-- You can install cargo using the shell template `nix-shell shells/rust.nix`
+- You can install cargo using the shell template `nix-shell shell-templates/rust.nix`
 - `cd list-orderer`
 
 ```console
