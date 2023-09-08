@@ -34,8 +34,8 @@
       "workbench.sideBar.location" = "right";
       "update.mode" = "none";
       "redhat.telemetry.enabled" = false;
-      "shellcheck.executablePath" = "/home/brad/.nix-profile/bin/shellcheck";
-      "shellformat.path" = "/home/brad/.nix-profile/bin/shfmt";
+      "shellcheck.executablePath" = "/etc/profiles/per-user/brad/bin/shellcheck";
+      "shellformat.path" = "/etc/profiles/per-user/brad/bin/shfmt";
       "[markdown]" = {
         "editor.defaultFormatter" = "yzhang.markdown-all-in-one";
       };
