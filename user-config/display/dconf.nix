@@ -260,7 +260,10 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/power" = {
+      idle-dim = false;
       power-button-action = "suspend";
+      sleep-inactive-ac-type = "nothing";
+      sleep-inactive-battery-type = "nothing";
     };
 
     "org/gnome/shell" = {
@@ -275,7 +278,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ ];
+      application-list = [];
     };
 
     "org/gnome/shell/extensions/user-theme" = {
