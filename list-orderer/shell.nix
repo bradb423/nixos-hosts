@@ -1,6 +1,6 @@
 let
-  unstable = import (fetchTarball("https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz")) {};
-  pkgs = import <nixpkgs> {};
+  unstable = import (fetchTarball ("https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz")) { };
+  pkgs = import <nixpkgs> { };
 in
 
 pkgs.mkShell {
