@@ -27,8 +27,8 @@ I like to keep my lists ordered alphabetically, and so there is a small program
 
 Usage:
 
-- You can install cargo using the shell template `nix-shell shell-templates/rust.nix`
-- `cd list-orderer`
+- You can install cargo using the shell template `cd list-orderer && nix-shell`
+- Use `cargo run -- -h` to get the usage information below:
 
 ```console
 The list ordering utility provides the ability to aplhabetically order items in
