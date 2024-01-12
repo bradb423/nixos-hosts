@@ -24,6 +24,7 @@
       mkdir = "mkdir -pv";
       mv = "mv -i";
       naon = "nano";
+      nd = "nix develop --command zsh";
       neofetch = "clear && neofetch";
       nfmt = "nixpkgs-fmt";
       nix-shell = "nix-shell --command zsh";
