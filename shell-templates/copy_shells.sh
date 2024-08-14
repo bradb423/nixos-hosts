@@ -21,7 +21,7 @@ while $menu_showing; do
 	if [[ $file_location =~ ^[0-9]+$ ]]; then
 		if [ $((file_location + 1)) -le ${#files_available[@]} ]; then
 			menu_showing=false
-			echo "Where do you want to copy the flake to?"
+			echo "Where do you want to copy the shell to?"
 			read -r location_to_send
 
 			echo "Copying file to: ${location_to_send}"
